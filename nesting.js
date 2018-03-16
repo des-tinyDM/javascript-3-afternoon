@@ -50,7 +50,14 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater(){
+  for (let key in employee){
+    if (employee[key].firstName === "Theo"){
+      
+    }
+  }
+  return employee
+}
 
 
 
@@ -68,7 +75,13 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
+// function removeDuplicates(arr){
+//   for (i=0;i<arr.length;i++){
+//     for (){
+
+//     }
+//   }
+// }
 
 
 
@@ -96,10 +109,11 @@ var cat = {
     2. Assign fluffy2ndFriend the name of Fluffy's 2nd friend.
 */
 
-//Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
 
+var grumpyActivity = cat.catFriends[0].activities[1];
+grumpyActivity;
+var fluffy2ndFriend = cat.catFriends[1].name;
+fluffy2ndFriend;
 
 
 ////////// PROBLEM 4 //////////
@@ -138,14 +152,12 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
-
 
 
 ////////// PROBLEM 5 //////////
 
 // Do not edit the code below.
-var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
+var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11] ];
 // Do not edit the code above.
 
 /*
@@ -157,6 +169,22 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-//Code Here
+function looper(){
+  newArr = [];
+  for (let i=0;i<numsArr.length;i++){
+    for (let nestedi = 0; nestedi < numsArr[i].length; nestedi++){
+      if (numsArr[i][nestedi] % 2 === 0){
+       numsArr[i][nestedi] = "even";
+        }
+      else /*if (numsArr[i][nestedi] % 2 !== 0)*/{
+       numsArr[i][nestedi] = "odd";
+        }
+      }
+    }
+    console.log(numsArr)
+    return numsArr;
+  }
+  
+// looper(numsArr);
 
 
